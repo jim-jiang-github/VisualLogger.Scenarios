@@ -1,0 +1,45 @@
+{
+  "Type": "LogText",
+  "Blocks": [],
+  "ColumnHeadTemplate": {
+    "RegexStart": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3})",
+    "RegexEnd": "^(?!\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
+    "RegexContent": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}) \\<(.*?)\\> \\[(.*?)\\] (.*?) (.*)",
+    "Cells": [
+      {
+        "RegexGroupIndex": 1,
+        "Name": "Time",
+        "ConvertorName": "Time"
+      },
+      {
+        "RegexGroupIndex": 2,
+        "Name": "Module"
+      },
+      {
+        "RegexGroupIndex": 3,
+        "Name": "Thread"
+      },
+      {
+        "RegexGroupIndex": 4,
+        "Name": "Level"
+      },
+      {
+        "RegexGroupIndex": 5,
+        "Name": "Msg"
+      }
+    ]
+  },
+  "Name": "schema_log_text_rcv_windows_22.2.20",
+  "LogFileLoaderType": "Txt",
+  "SupportedExtensions": [
+    ".txt",
+    ".log"
+  ],
+  "Convertors": [
+    {
+      "Name": "Time",
+      "Type": "Time2Time",
+      "Expression": "[MM/dd/yy HH:mm:ss.fff][yyyy-MM-dd HH:mm:ss,fff]"
+    }
+  ]
+}
