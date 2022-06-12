@@ -5,6 +5,9 @@
     "RegexStart": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3})",
     "RegexEnd": "^(?!\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
     "RegexContent": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}) \\<(.*?)\\> \\[(.*?)\\] (.*?) (.*)",
+    "EnumerateWordsColumnNames": [
+      "Msg"
+    ],
     "Cells": [
       {
         "RegexGroupIndex": 1,
