@@ -8,6 +8,11 @@
     "EnumerateWordsColumnNames": [
       "Msg"
     ],
+    "FilterableColumnNames": [
+      "Level",
+      "Module",
+      "Thread"
+    ],
     "Cells": [
       {
         "RegexGroupIndex": 1,
