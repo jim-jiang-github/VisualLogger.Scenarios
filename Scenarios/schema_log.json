@@ -5,35 +5,47 @@
     "RegexStart": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3})",
     "RegexEnd": "^(?!\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
     "RegexContent": "^(\\d{2}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}) \\<(.*?)\\> \\[(.*?)\\] (.*?) (.*)",
-    "EnumerateWordsColumnNames": [
-      "Msg"
-    ],
-    "FilterableColumnNames": [
-      "Level",
-      "Module",
-      "Thread"
-    ],
-    "Cells": [
+    "Columns": [
       {
-        "RegexGroupIndex": 1,
-        "Name": "Time",
-        "ConvertorName": "Time"
+        "Cell": {
+          "RegexGroupIndex": 1,
+          "Name": "Time",
+          "ConvertorName": "Time"
+        },
+        "Enumeratable": false,
+        "Filterable": false
       },
       {
-        "RegexGroupIndex": 2,
-        "Name": "Module"
+        "Cell": {
+          "RegexGroupIndex": 2,
+          "Name": "Module"
+        },
+        "Enumeratable": false,
+        "Filterable": true
       },
       {
-        "RegexGroupIndex": 3,
-        "Name": "Thread"
+        "Cell": {
+          "RegexGroupIndex": 3,
+          "Name": "Thread"
+        },
+        "Enumeratable": false,
+        "Filterable": true
       },
       {
-        "RegexGroupIndex": 4,
-        "Name": "Level"
+        "Cell": {
+          "RegexGroupIndex": 4,
+          "Name": "Level"
+        },
+        "Enumeratable": false,
+        "Filterable": true
       },
       {
-        "RegexGroupIndex": 5,
-        "Name": "Msg"
+        "Cell": {
+          "RegexGroupIndex": 5,
+          "Name": "Msg"
+        },
+        "Enumeratable": true,
+        "Filterable": false
       }
     ]
   },
